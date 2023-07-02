@@ -26,21 +26,19 @@ const App = () => {
   };
 
   var todoItems = state.items.length > 0 && (
-    <Paper style={{ margin: 16 }}>
-      <List>
-        {state.items.map((item, idx) => (
-          <Todo item={item} key={item.id} deleteItem={deleteItem} />
-        ))}
-      </List>
-    </Paper>
+    <div className="todo-item">
+      {state.items.map((item, idx) => (
+        <Todo item={item} key={item.id} deleteItem={deleteItem} />
+      ))}
+    </div>
   );
 
   // 3. props로 넘겨주기å
   return (
-    <div className="App container mt-4">
+    <div className="container mt-4">
       <h1 className="text-center">Todo List</h1>
       <AddTodo add={add} />
-      <div className="TodoList">{todoItems}</div>
+      <div className="todo-items">{todoItems}</div>
     </div>
   );
 };

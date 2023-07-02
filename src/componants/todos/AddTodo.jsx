@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const AddTodo = (props) => {
 
-  const [state, setState] = useState({ item: { title: "" } });
+  const [state, setState] = useState({ item: { title: "", id: "" } });
   const add = props.add;
 
   const onInputChange = (e) => {
@@ -27,7 +27,7 @@ const AddTodo = (props) => {
         <input type="text" className="form-control" placeholder="Add a new todo item"
           aria-label="Add a new todo item" onChange={onInputChange}
           onKeyDown={enterKeyEventHandler}
-          value={state.item} />
+          value={state.title} />
         <button className="btn btn-primary add-btn" onClick={onButtonClick}>Add</button>
       </div>
     </div>
