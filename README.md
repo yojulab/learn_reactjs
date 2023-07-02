@@ -1,3 +1,8 @@
+```
+$ npm create vite@latest learn_reacts -- --template react-ts
+$ npm install
+$ npm run dev
+```
 | 주제 | 주요 항목 | 작성 | 참조 |
 | :---: | --- |  --- | :---: |
 |config|nodejs,npmjs,react|[tsx](./src/App.tsx)|[Render url](https://www.w3schools.com/REACT/react_render.asp), [Coding JSX](https://www.w3schools.com/REACT/react_jsx.asp)|
